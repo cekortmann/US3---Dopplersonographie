@@ -1,0 +1,40 @@
+\input{../header.tex}
+
+\subject{VERSUCH NUMMER US3}
+\title{Doppler-Sonographie}
+\date{
+  Durchführung: 16.05.2023
+  \hspace{3em}
+  Abgabe: 23.05.2023
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\input{ziel.tex}
+\input{theorie.tex}
+\input{aufbau.tex}
+\input{durchfuehrung.tex}
+\input{auswertung.tex}
+\input{diskussion.tex}
+
+\newpage
+\printbibliography
+\nocite{apus3}
+\nocite{matplotlib}
+\nocite{numpy}
+\nocite{scipy}
+\nocite{uncertainties}
+\nocite{reback2020pandas}
+
+\newpage
+%\includepdf[scale=0.9,pages=1,pagecommand=\section*{Anhang}\thispagestyle{empty}]{messdaten.pdf}
+%\addcontentsline{toc}{section}{\protect\numberline{}Anhang}
+%\includepdf[scale=0.9,pages=2-]{messdaten.pdf}
+%\includepdf[pages=-]{messdaten.pdf}
+
+\end{document}
