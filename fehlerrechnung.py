@@ -9,11 +9,26 @@ from uncertainties import unumpy as unp
 from uncertainties.unumpy import uarray                     # Array von Fehler: fehlerarray =  uarray(array, errarray)
 from uncertainties.unumpy import (nominal_values as noms,   # Wert:             noms(fehlerwert) = x
                                   std_devs as stds)  
+from uncertainties.umath import cos
 
-def Blang(I,l):
-    return 12.566*10**(-7)*1*3400*I/l
+a1=80.06
+a2=70.53
+a3=54.74
 
-uI = ufloat(0.5, 0.1)
-ul = ufloat(0.102, 0.005)
+v0=2*10**6
+c1=2700
 
-print(Blang(uI, ul))
+a=(80.06,70.53,54.74)
+#a=np.deg2ra(a)
+a80= unp.uarray([90.0,144.0,197.0,349.0,472],[0,0,0,0,0])
+a70= unp.uarray([100,189,296,447,641],[0,0,0,0,0])
+a54= unp.uarray([144,200,447,748,1007],[0,0,0,0,0])
+#secondW= unp.uarray
+
+def v(a,dv,v,c):
+    return (c*dv)/(2*v*cos(a*np.pi/180))
+    
+
+print('80.06:', v(a[0],a80,v0,1800))
+print('70.53:', v(a[1],a70,v0,1800))
+print('54.74:', v(a[2],a54,v0,1800))

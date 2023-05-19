@@ -2,3 +2,69 @@
 \label{sec:Auswertung}
 
 \input{fehlerrechnung.tex}
+
+\subsection{Bestimmung der Strömungsgeschwindigkeit}
+\label{sec:Strömungsv}
+Im ersten Teil der Auswertung wird die Strömungsgeschwindigkeit bestimmt. Die hierfür nötigen Messwerte sind in \autoref{tab:Stroemungsv} gelistet.
+\begin{table}
+    \centering
+    \caption{Messwerte zu Bestimmung der Strömungsgeschwindigkeit.}
+    \begin{tabular}{c c c c c c}
+        \toprule
+        Rpm der Pumpe  & Winkel $\theta \mathrm{/} \unit{\degree}$ & Winkel $\alpha \mathrm{/}  \unit{\degree}$ & $\nu_{\text{max}} \mathrm{/} \unit{\hertz}$ & $\nu_{\text{mean}} \mathrm{/} \unit{\hertz}$ &  $ \bigtriangleup\nu$ \\
+        \midrule
+        2990 & 15 & 80.06 & 175 & 85 & 90  \\
+             & 30 & 70.53 & 210 & 110 & 100 \\
+             & 60 & 54.74 & 303 & 159 & 144 \\
+        4020 & 15 & 80.06 & 290 & 146 & 144 \\
+             & 30 & 70.53 & 360 & 171 & 189 \\
+             & 60 & 54.74 & 570 & 370 & 200 \\
+        5010 & 15 & 80.06 & 380 & 183 & 197 \\
+             & 30 & 70.53 & 565 & 269 & 296 \\
+             & 60 & 54.74 & 960 & 513 & 447 \\
+        6000 & 15 & 80.06 & 605 & 256 & 349 \\
+             & 30 & 70.53 & 850 & 403 & 447 \\
+             & 60 & 54.74 & 1505 & 757 & 748 \\
+        7000 & 15 & 80.06 & 850 & 378 & 472  \\
+             & 30 & 70.53 & 1160 & 519 & 641 \\
+             & 60 & 54.74 & 2020 & 1013 & 1007 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:Stroemungsv}
+\end{table}
+Eine Formel für dei Flussgeschwindigkeit ergibt sich durch das Umstellen von \autoref{eqn:dv} nach $v$
+\begin{equation*}
+v=\frac{c\cdot \bigtriangleup \nu}{2\nu_0\cdot \cos \alpha}\. .
+\end{equation*}
+So ergeben sich folgende Flussgeschwindigkeiten
+\begin{table}
+     \centering
+     \caption{Fließgeschwindigkeiten der verschiedenen Winkel und Pumpleistungen.}
+     \begin{tabular}{c c c c}
+          \toprule
+          Rpm der Pumpe & $v_{15°}\mathrm{/} \unit{\frac{\meter}{\second}}$ & $v_{30°}\mathrm{/} \unit{\frac{\meter}{\second}}$& $v_{60°}\mathrm{/} \unit{\frac{\meter}{\second}}$\\
+          \midrule
+          2990 & 0.2346 & 0.1350 & 0.1122\\
+          4020 & 0.3754 & 0.2552 & 0.1559\\
+          5010 & 0.5136 & 0.3996 & 0.3484\\
+          6000 & 0.9098 & 0.6035 & 0.5831\\
+          7000 & 1.2305 & 0.8654 & 0.7850\\ 
+          \bottomrule
+     \end{tabular}
+\end{table}
+
+
+
+
+\begin{table}
+     \centering
+     \caption{3920.}
+     \begin{tabular}{c c c c c}
+         \toprule
+         Messtiefe $ \mathrm{/} \unit{\micro \second}$ &  Messtiefe $ \mathrm{/} \unit{\milli \meter}$ & $v \mathrm{/} \unit{\frac{\centi \meter}{\second}}$ & $v \mathrm{/} \unit{\frac{\meter}{\second}}$ & $I \mathrm{/} 1000\unit{\frac{V^2}{\second}}$\\
+         \midrule
+          
+         \bottomrule
+     \end{tabular}
+     \label{tab:3920rpm}
+ \end{table}
