@@ -52,7 +52,8 @@ So ergeben sich die folgenden Flussgeschwindigkeiten.
           \bottomrule
      \end{tabular}
 \end{table}
-
+Neben der Berechnung der Geschwindigkeiten $v$ wird auch der Quotient der Frequenzverschiebung $\Delta \nu$ und der Kosinus des Dopplerwinkels $\alpha$ gegen die Geschwindigkeit $v$ aufgetragen.
+Diese Graphen sind in \autoref{fig:Winkel15}, \autoref{Winkel30} und \autoref{fig:Winkel45} dargestellt.
 \begin{figure}
      \centering
      \includegraphics[height = 6cm]{build/plot11.pdf}
@@ -75,16 +76,93 @@ So ergeben sich die folgenden Flussgeschwindigkeiten.
 \end{figure}
 
 
+\subsection{Bestimmung des Strömungsprofils}  
+\label{sec:Profil}
 
-\begin{table}
+Für den zweiten der Auswertung wird der Prismawinkel $\theta =30°$ verwendet. Die gemessenen Geschwindigkeiten und Streuintensität für 2 Pumpdrehzahlen sind in \autoref{tab:3920rpm} und \autoref{tab:6100rpm} aufgetragen.
+Darunter sind die Geschwindigkeiten und Streuintensitäten der Drehzahlen je gegen die MEsstiefe aufgetragen.
+ \begin{table}
      \centering
-     \caption{3920.}
+     \caption{Streuintensität und Geschwindigkeit bei 3920 Umdrehungen pro Minute.}
      \begin{tabular}{c c c c c}
          \toprule
          Messtiefe $ \mathrm{/} \unit{\micro \second}$ &  Messtiefe $ \mathrm{/} \unit{\milli \meter}$ & $v \mathrm{/} \unit{\frac{\centi \meter}{\second}}$ & $v \mathrm{/} \unit{\frac{\meter}{\second}}$ & $I \mathrm{/} 1000\unit{\frac{V^2}{\second}}$\\
          \midrule
-          
+         12.0 &  -0.42 &  13.2 &  0.132 &  460\\
+         12.5 &  0.33 &  11.5 &  0.115 &  1160\\
+         13.0 &  1.08 &  13.2 &  0.132 &  1500\\
+         13.5 &  1.83 &  14.8 &  0.148 &  1200\\
+         14.0 &  2.58 &  14.8 &  0.148 &  1000\\
+         14.5 &  3.33 &  16.5 &  0.165 &  1000\\
+         15.0 &  4.08 &  16.5 &  0.165 &  1500\\
+         15.5 &  4.83 &  16.5 &  0.165 &  1650\\
+         16.0 &  5.58 &  16.5 &  0.165 &  1900\\
+         16.5 &  6.33 &  16.5 &  0.165 &  1200\\
+         17.0 &  7.08 &  16.5 &  0.165 &  750\\
+         17.5 &  7.83 &  16.5 &  0.165 &  400\\
+         18.0 &  8.58 &  16.5 &  0.165 &  350\\
+         18.5 &  9.33 &  16.5 &  0.165 &  340\\
+         19.0 &  10.08 &  14.8 &  0.148 &  320\\
+         19.5 &  10.83 &  14.8 &  0.148 &  310\\
          \bottomrule
      \end{tabular}
      \label{tab:3920rpm}
- \end{table}
+\end{table}
+\begin{table}
+     \centering
+     \caption{Streuintensität und Geschwindigkeit bei 6100 Umdrehungen pro Minute.}
+     \begin{tabular}{c c c c c}
+          \toprule
+          Messtiefe $ \mathrm{/} \unit{\micro \second}$ &  Messtiefe $ \mathrm{/} \unit{\milli \meter}$ & $v \mathrm{/} \unit{\frac{\centi \meter}{\second}}$ & $v \mathrm{/} \unit{\frac{\meter}{\second}}$ & $I \mathrm{/} 1000\unit{\frac{V^2}{\second}}$\\
+          \midrule
+          12.0 &  -0.42 &  38.2 &  0.382 &  800\\
+          12.5 &  0.33 &  44.6 &  0.446 &  1700\\
+          13.0 &  1.08 &  50.9 &  0.509 &  2600\\
+          13.5 &  1.83 &  57.3 &  0.573 &  3500\\
+          14.0 &  2.58 &  66.8 &  0.668 &  3500\\
+          14.5 &  3.33 &  76.4 &  0.764 &  3000\\
+          15.0 &  4.08 &  82.7 &  0.827 &  2700\\
+          15.5 &  4.83 &  82.7 &  0.827 &  2400\\
+          16.0 &  5.58 &  82.7 &  0.827 &  2100\\
+          16.5 &  6.33 &  73.2 &  0.732 &  1800\\
+          17.0 &  7.08 &  70.0 &  0.700 &  1400\\
+          17.5 &  7.83 &  66.8 &  0.668 &  1200\\
+          18.0 &  8.58 &  66.8 &  0.668 &  1200\\
+          18.5 &  9.33 &  66.8 &  0.668 &  1150\\
+          19.0 &  10.08 &  70.0 &  0.700 &  1000\\
+          19.5 &  10.83 &  73.2 &  0.732 &  800\\
+          \bottomrule
+     \end{tabular}
+     \label{tab:6100rpm}
+\end{table}
+
+Der Nullpunkt der Messtiefe liegt hierbei auf der Oberfläche des Rohres.
+
+
+\begin{figure}
+     \centering
+     \includegraphics[height = 6cm]{build/rpm39201.pdf}
+     \caption{Geschwindigkeit aufgetragen gegen die Messtiefe bei 3920 Rpm.}
+     \label{fig:39201}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \includegraphics[height = 6cm]{build/rpm39202.pdf}
+     \caption{Strömungsintensität aufgetragen gegen die Messtiefe bei 3920 Rpm.}
+     \label{fig:39202}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \includegraphics[height = 6cm]{build/rpm61001.pdf}
+     \caption{Geschwindigkeit aufgetragen gegen die Messtiefe bei 6100 Rpm.}
+     \label{fig:61001}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \includegraphics[height = 6cm]{build/rpm61002.pdf}
+     \caption{Strömungsintensität aufgetragen gegen die Messtiefe bei 6100 Rpm.}
+     \label{fig:61002}
+\end{figure}

@@ -85,3 +85,41 @@ plt.legend(loc="best")
 plt.savefig('build/plot13.pdf', bbox_inches = "tight")    
 plt.clf() 
 print('a3',a3_fit, 'b3',b3_fit)
+
+#Zweiter Teil
+bla, Mt1, vcm1, vm1,I = np.genfromtxt('rpm3920.txt', unpack=True, skip_header=1)
+
+plt.plot(Mt1,vm1,'xr', linewidth = 1, label = 'Messwerte', alpha=0.5)
+plt.legend(loc="best")
+plt.grid(1)
+plt.ylabel(r'$v \, / \,\mathrm{m}\cdot \mathrm{s}^{-1}$')
+plt.xlabel(r'Messtiefe $ x\, / \, \mathrm{cm}$')
+plt.savefig('build/rpm39201.pdf', bbox_inches = "tight")
+plt.clf() 
+
+plt.plot(Mt1,I,'xr', linewidth = 1, label = 'Messwerte', alpha=0.5)
+plt.legend(loc="best")
+plt.grid(1)
+plt.ylabel(r'$I \, / \,\mathrm{V}^2\mathrm{s}^{-1}$')
+plt.xlabel(r'Messtiefe $ x\, / \, \mathrm{cm}$')
+plt.savefig('build/rpm39202.pdf', bbox_inches = "tight")
+plt.clf() 
+
+
+bla2, Mt2, vcm2, vm2,I2 = np.genfromtxt('rpm6100.txt', unpack=True, skip_header=1)
+
+plt.plot(Mt2,vm2,'xr', linewidth = 1, label = 'Messwerte', alpha=0.5)
+plt.legend(loc="best")
+plt.grid(1)
+plt.ylabel(r'$v \, / \,\mathrm{m}\cdot \mathrm{s}^{-1}$')
+plt.xlabel(r'Messtiefe $x\, / \, \mathrm{cm}$')
+plt.savefig('build/rpm61001.pdf', bbox_inches = "tight")
+plt.clf() 
+
+plt.plot(Mt2,I2,'xr', linewidth = 1, label = 'Messwerte', alpha=0.5)
+plt.legend(loc="best")
+plt.grid(1)
+plt.ylabel(r'$I \, / \,\mathrm{V}^2\mathrm{s}^{-1}$')
+plt.xlabel(r'Messtiefe $x\, / \, \mathrm{cm}$')
+plt.savefig('build/rpm61002.pdf', bbox_inches = "tight")
+plt.clf() 
