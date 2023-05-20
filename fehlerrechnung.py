@@ -47,8 +47,8 @@ a2_fit = params2[0][0]
 b2_fit = params2[0][1] 
 
 params3 = curve_fit(Ausgleich,v(a[2],a54,v0,1800),2*v0*v(a[2],a54,v0,1800)/1800)
-a3_fit = params1[0][0]
-b3_fit = params1[0][1] 
+a3_fit = params3[0][0]
+b3_fit = params3[0][1] 
 
 h1=np.linspace(0,1.3,10)
 h2=np.linspace(0,0.9,10)
