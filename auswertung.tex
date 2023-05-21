@@ -47,15 +47,15 @@ So ergeben sich die folgenden Flussgeschwindigkeiten.
 \begin{table}
      \centering
      \caption{Fließgeschwindigkeiten der verschiedenen Winkel und Pumpleistungen.}
-     \begin{tabular}{c c c c c}
+     \begin{tabular}{c c c c c c}
           \toprule
-          Rpm der Pumpe & $v_{15°}\mathrm{/} \unit{\frac{\meter}{\second}}$ & $v_{30°}\mathrm{/} \unit{\frac{\meter}{\second}}$& $v_{60°}\mathrm{/} \unit{\frac{\meter}{\second}}$\\
+          Rpm der Pumpe & $v_{15°}\mathrm{/} \unit{\frac{\meter}{\second}}$ & $v_{30°}\mathrm{/} \unit{\frac{\meter}{\second}}$& $v_{60°}\mathrm{/} \unit{\frac{\meter}{\second}}$ & $\bar{v}\mathrm{/} \unit{\frac{\meter}{\second}}$\\
           \midrule
-          2990 & 0.2346 & 0.1350 & 0.1122\\
-          4020 & 0.3754 & 0.2552 & 0.1559\\
-          5010 & 0.5136 & 0.3996 & 0.3484\\
-          6000 & 0.9098 & 0.6035 & 0.5831\\
-          7000 & 1.2305 & 0.8654 & 0.7850\\ 
+          2990 & 0.2346 & 0.1350 & 0.1122 & 0.1605\\
+          4020 & 0.3754 & 0.2552 & 0.1559 & 0.2621\\
+          5010 & 0.5136 & 0.3996 & 0.3484 & 0.4205\\
+          6000 & 0.9098 & 0.6035 & 0.5831 & 0.6988\\
+          7000 & 1.2305 & 0.8654 & 0.7850 & 0.9603\\ 
           \bottomrule
      \end{tabular}
 \end{table}
@@ -82,7 +82,18 @@ Diese Graphen sind in \autoref{fig:Winkel15}, \autoref{fig:Winkel30} und \autore
      \label{fig:Winkel45}
 \end{figure}
 
-
+Aufgrund der Tatsache, dass die Pumpe einen Defekt aufwies, welcher ein Anzeigen des Volumenstroms verhinderte, könne Theoretische Werte nur mit dem Abgleichen der maximalen Pumpleistung mit jener einer anderen Pumpe verglichen werden.
+Die maximale Drehzahl der Pumpe waren $8700$ Rpm, der Volumenstrom der Vergleichspumpe liegt unter Volllast bei $7.5 \,\unit{\frac{\liter}{minute}}$. Mit der Querschnittsfläche des Rohrs von $0.025\, \unit{\centi \meter}^2$ kann so eine maximale Fließgeschwindigkeit von
+$1.59 \, \unit{\frac{\meter}{\second}}$ angenommen werden.
+Über den Dreisatz gilt es jetzt die Geschwindigkeiten für niedrigere Drehzahlen zu ermitteln.
+Es ergeben sich folgende Werte 
+\begin{align*}
+     v_{7000\text{ Rpm}}&=1.2793\, \unit{\frac{\meter}{\second}}\\
+     v_{6000\text{ Rpm}}&=1.0966\, \unit{\frac{\meter}{\second}}\\
+     v_{5010\text{ Rpm}}&=0.9157\, \unit{\frac{\meter}{\second}}\\
+     v_{4020\text{ Rpm}}&=0.7347\, \unit{\frac{\meter}{\second}}\\
+     v_{2990\text{ Rpm}}&=0.5464\, \unit{\frac{\meter}{\second}}\, .\\
+\end{align*}
 \subsection{Bestimmung des Strömungsprofils}  
 \label{sec:Profil}
 
