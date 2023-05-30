@@ -2,15 +2,15 @@
 \label{sec:Auswertung}
 
 \input{fehlerrechnung.tex}
-
+\subsection{Auswertung der Messwerte}
 Zunächst müssen die Dopplerwinkel $\alpha$ für die Winkel $\theta$ berechnet werden.
 Die \autoref{eqn:alpha} liefert so 
 \begin{align*}
-     \alpha(\theta_{15}) &= 80.06\\
-     \alpha(\theta_{30}) &=70.53\\
-     \alpha(\theta_{45}) &=54.74\\
+     \alpha(\theta =15°) &= 80.06\\
+     \alpha(\theta =30°) &=70.53\\
+     \alpha(\theta =45°) &=54.74\\
 \end{align*}
-\subsection{Bestimmung der Strömungsgeschwindigkeit}
+\subsubsection{Bestimmung der Strömungsgeschwindigkeit}
 \label{sec:Strömungsv}
 Im ersten Teil der Auswertung wird die Strömungsgeschwindigkeit bestimmt. Die hierfür nötigen Messwerte sind in \autoref{tab:Stroemungsv} gelistet.
 \begin{table}
@@ -18,7 +18,7 @@ Im ersten Teil der Auswertung wird die Strömungsgeschwindigkeit bestimmt. Die h
     \caption{Messwerte zu Bestimmung der Strömungsgeschwindigkeit.}
     \begin{tabular}{c c c c c c}
         \toprule
-        Rpm der Pumpe  & Winkel $\theta \mathrm{/} \unit{\degree}$ & Winkel $\alpha \mathrm{/}  \unit{\degree}$ & $\nu_{\text{max}} \mathrm{/} \unit{\hertz}$ & $\nu_{\text{mean}} \mathrm{/} \unit{\hertz}$ &  $ \Delta\nu$ \\
+        Rpm der Pumpe  & Winkel $\theta \mathrm{/} \unit{\degree}$ & Winkel $\alpha \mathrm{/}  \unit{\degree}$ & $\nu_{\text{max}} \mathrm{/} \unit{\hertz}$ & $\nu_{\text{mean}} \mathrm{/} \unit{\hertz}$ &  $ \Delta\numathrm{/} \unit{\hertz}$ \\
         \midrule
         2990 & 15 & 80.06 & 175 & 85 & 90  \\
              & 30 & 70.53 & 210 & 110 & 100 \\
@@ -59,6 +59,7 @@ So ergeben sich die folgenden Flussgeschwindigkeiten.
           \bottomrule
      \end{tabular}
 \end{table}
+In der letzten Spalte stehen die Mittelwerte nach \autoref{eqn:Mittelwert} der Geschwindigkeiten zu den einzelnen Drehzahlen der Pumpe. 
 Neben der Berechnung der Geschwindigkeiten $v$ wird auch der Quotient der Frequenzverschiebung $\Delta \nu$ und der Kosinus des Dopplerwinkels $\alpha$ gegen die Geschwindigkeit $v$ aufgetragen.
 Diese Graphen sind in \autoref{fig:Winkel15}, \autoref{fig:Winkel30} und \autoref{fig:Winkel45} dargestellt.
 \begin{figure}
@@ -94,10 +95,10 @@ Es ergeben sich folgende Werte
      v_{4020\text{ Rpm}}&=0.7347\, \unit{\frac{\meter}{\second}}\\
      v_{2990\text{ Rpm}}&=0.5464\, \unit{\frac{\meter}{\second}}\, .\\
 \end{align*}
-\subsection{Bestimmung des Strömungsprofils}  
+\subsubsection{Bestimmung des Strömungsprofils}  
 \label{sec:Profil}
 
-Für den zweiten der Auswertung wird der Prismawinkel $\theta =30°$ verwendet. Die gemessenen Geschwindigkeiten und Streuintensität für 2 Pumpdrehzahlen sind in \autoref{tab:3920rpm} und \autoref{tab:6100rpm} aufgetragen.
+Für den zweiten der Auswertung wird der Prismawinkel $\theta =15°$ verwendet. Die gemessenen Geschwindigkeiten und Streuintensität für 2 Pumpdrehzahlen sind in \autoref{tab:3920rpm} und \autoref{tab:6100rpm} aufgetragen.
 Darunter sind die Geschwindigkeiten und Streuintensitäten der Drehzahlen je gegen die Messtiefe aufgetragen.
  \begin{table}
      \centering
